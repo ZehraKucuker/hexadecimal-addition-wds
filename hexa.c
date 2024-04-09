@@ -64,7 +64,7 @@ int convertingNumberToArray(int hexaValue) {
 			break;
 	}
 	return (int)newValue;
-}
+} 
 
 int convertingNumberToASCII(int numberValue) {
 	int asciiValue;
