@@ -119,8 +119,10 @@ int main() {
 	int lengthOfArray1 = findingLengthOfArray(hexaArray1);
 	int lengthOfArray2 = findingLengthOfArray(hexaArray2);
 
-	int over = 0, i = 169, hexaValue1 = 0, hexaValue2 = 0, sum = 0;
+	int over = 0, i = 169, sum = 0;
 	while(1) {
+		int hexaValue1 = 0, hexaValue2 = 0;
+
 		if(lengthOfArray1 > (-1) && 47 < hexaArray1[--lengthOfArray1] && hexaArray1[lengthOfArray1] < 58) {
 			hexaValue1 = hexaArray1[lengthOfArray1] - '0';
 		}
@@ -148,8 +150,6 @@ int main() {
 		else {
 			resultArray[i] = convertingNumberToASCII(sum);
 		}
-		hexaValue1 = 0;
-		hexaValue2 = 0;
 		i--;
 		if((lengthOfArray1 > lengthOfArray2 && lengthOfArray2 == 0 && over == 1) 
 		|| (lengthOfArray2 > lengthOfArray1 && lengthOfArray1 == 0 && over == 1)) {
